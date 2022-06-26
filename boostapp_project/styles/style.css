@@ -1,0 +1,411 @@
+@font-face {
+  font-family: rubik;
+  src: url(fonts/Rubik-Regular.ttf);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: rubik;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.loader {
+  margin-right: 2em;
+  border: 1px solid #f3f3f3;
+  border-top: 1px solid #3498db;
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  -webkit-animation: spin 0.6s linear infinite;
+          animation: spin 0.6s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 2px black solid;
+  height: 90%;
+  width: 50em;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 3px 20px #00000029;
+          box-shadow: 0px 3px 20px #00000029;
+  border: 1px solid #cecece;
+  border-radius: 6px;
+  opacity: 1;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+
+.gym-img {
+  width: 50%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.form-content {
+  margin-right: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-header {
+  color: #413f3f;
+  opacity: 1;
+}
+
+.input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.input-container-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1em;
+}
+
+.user-icon {
+  margin-left: 0.4em;
+}
+
+.num-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f3f3f4;
+  width: 80%;
+  border-radius: 3px;
+}
+
+.inner-icon {
+  background: transparent 0% 0% no-repeat padding-box;
+  background-image: url("/icons/check-circle-light.svg");
+  background-color: #f3f3f4;
+  background-position: center;
+  opacity: 1;
+  height: 2em;
+  width: 1.9em;
+  padding-left: 1.2em;
+  border-radius: 3px;
+}
+
+.input-field {
+  font-family: rubik;
+  background: #f3f3f4 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  opacity: 1;
+  width: 100%;
+  height: 2em;
+  border: none;
+  font-size: 1em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+input::-webkit-input-placeholder {
+  letter-spacing: 0px;
+  color: #959595;
+  opacity: 1;
+  padding-right: 0.5em;
+}
+
+input:-ms-input-placeholder {
+  letter-spacing: 0px;
+  color: #959595;
+  opacity: 1;
+  padding-right: 0.5em;
+}
+
+input::-ms-input-placeholder {
+  letter-spacing: 0px;
+  color: #959595;
+  opacity: 1;
+  padding-right: 0.5em;
+}
+
+input::placeholder {
+  letter-spacing: 0px;
+  color: #959595;
+  opacity: 1;
+  padding-right: 0.5em;
+}
+
+input:focus {
+  outline: none;
+}
+
+.input-field-left {
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+.confirmation-input-field {
+  margin-left: 1em;
+}
+
+.select {
+  font-family: rubik;
+  font-size: 1em;
+  background: #f3f3f4 0% 0% no-repeat padding-box;
+  background-position: left 13.16px center;
+  background-size: 8px;
+  padding-left: 2.2em;
+  padding-right: 0.5em;
+  border-radius: 3px;
+  border: none;
+  opacity: 1;
+  margin: 0 1em 0 1em;
+  cursor: pointer;
+  background-image: url(/icons/sort-down-solid.svg);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.select:focus,
+.select:hover {
+  outline: none;
+  border: 1px solid #bbbbbb;
+  -webkit-transition: opacity 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
+  transition: opacity 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
+}
+
+.button-container {
+  margin: 1em 1.35em 0 0;
+}
+
+.confirmation-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Rubik;
+  background: #0089ff 0% 0% no-repeat padding-box;
+  border-radius: 18px;
+  opacity: 1;
+  text-align: left;
+  font: normal normal medium 1.4em;
+  letter-spacing: 1.25px;
+  color: #ffffff;
+  opacity: 1;
+  padding: 0.7em 2.4em 0.7em 2.4em;
+  border: none;
+  cursor: pointer;
+}
+
+.confirmation-btn-disabled {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Rubik;
+  background: #0088ff3f 0% 0% no-repeat padding-box;
+  border-radius: 18px;
+  opacity: 1;
+  text-align: left;
+  font: normal normal medium 1.4em;
+  letter-spacing: 1.25px;
+  color: #ffffff;
+  opacity: 1;
+  padding: 0.7em 2.4em 0.7em 2.4em;
+  border: none;
+}
+
+.confirmation-btn:hover {
+  background-color: #0088ffc2;
+}
+
+.radio-selection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0.3em;
+}
+
+.radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.radio label {
+  margin-right: 0.5em;
+  cursor: pointer;
+}
+
+.minor-radio {
+  margin-right: 1.2em;
+}
+
+.adult-radio {
+  margin-left: 1.2em;
+}
+
+.input-container-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1em;
+}
+
+.input-container-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1em;
+}
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.trademark {
+  margin-top: 1em;
+}
+
+.powered-by {
+  letter-spacing: 0px;
+  color: #707070;
+  opacity: 1;
+}
+
+.boostapp {
+  font: normal normal bold 16px/19px Rubik;
+  letter-spacing: 0px;
+  color: #707070;
+}
+
+#surname-error {
+  margin-right: 11em;
+}
+
+#first-name-error {
+  margin-left: 17em;
+}
+
+label.error {
+  position: absolute;
+  font-weight: 600;
+  display: block;
+  color: #f00;
+  font-size: 0.8em;
+  margin: 2.4em 0em 0em 0em;
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  .form {
+    height: 80%;
+    width: 100%;
+  }
+  .gym-img {
+    height: 20%;
+    width: 100%;
+  }
+  .trademark {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
